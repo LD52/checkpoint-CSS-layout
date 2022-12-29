@@ -6,73 +6,58 @@
     box-sizing: border-box;
 }
 body{
-    display: block;
-    height: 100vh;
-    width: 87%;
-    margin-left: 95px;
+    padding : 1rem 150px 1rem 150px;
     font-family: 'Kumbh Sans', sans-serif;  
 }
-.bar{
-width: 100%;
-margin: 30px 50px -15px 60px; 
-height: 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+
+.icon-menu{
+    display : none;
 }
-.div1{
-    width:60%;
+.bar{
+
+    padding: 1.5rem 0 1.5rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid hsl(219, 9%, 45%);;
+}
+.div1{
+    width:70%;
+    display: flex;
     list-style-type: none;
 }
-.div2{
-    margin-right: 190px;
-}
-.logo{
-    margin-right: 60px;
-    width: 10%;
-}
+
+
 .menu{
     color:  hsl(219, 9%, 45%);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:50% ;
-margin: 0px;
-padding: 0px;
-list-style-type: none;
-font-size: small;
-margin-right: 250px;
+    list-style-type: none;
+    margin-left: 3rem;
 }
+
+.menu li{
+    margin-left: 0.5rem;
+}
+
 .div2{
-    width: 20%;
-    height: 50px;
+    width:30%;
     display: flex;
-    justify-content: space-around;
-}
-.avatar{
-    width: 35px;
-    margin-right: 50px;
-}
-.avatar-photo{
-    margin-bottom: 90px
-}
-.chart{
-    margin-left: 80px;
-    width: 35px;
-    display: flex;
+    justify-content: end;
     align-items: center;
 }
+
+.avatar{
+    margin-left: 0.5rem;
+}
+
 .avatar-photo{
     height: 40px;
     width: 40px;
 }
 .card{
-    width: 85%;
-    height: 570px;
     display: flex;
-    margin-left: 120px;
+    margin-top: 3rem;
 }
 .division1{
     width: 50%;
@@ -201,3 +186,44 @@ justify-content: center;
     color: white;
     font-size: x-small;
 }
+
+
+@media screen and (max-width: 768px){
+    body {
+        padding : 0;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .bar{
+        padding : 0.5rem 1.5rem 0.5rem 1.5rem;
+        border-bottom: none;
+    }
+    .icon-menu{
+        display : inline;
+    }
+
+    .card{
+       flex-direction: column;
+       margin-top: 0;
+    }
+
+    .four{
+        display: none;
+    }
+
+    .division1{
+        width : 100%;
+        height : auto;
+    }
+    .container {
+        width : 100%;
+        height : auto;
+    }
+    .container img{
+        border-radius: 0;
+    }
+}
+
